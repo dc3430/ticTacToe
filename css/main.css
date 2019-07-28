@@ -1,0 +1,47 @@
+h1 {
+    font-family: 'Indie Flower', cursive, sans-serif;
+    font-size: 8vmin;
+    text-align: center;
+}
+
+td {
+    border: .5vmin solid blue;
+    height: 10vmin;
+    width: 10vmin;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    position: absolute;
+    left: 35vmin;
+    top: 25vmin;
+}
+
+table tr:first-child td {
+    border-top: 0;
+}
+
+table tr:last-child td {
+    border-bottom: 0;
+}
+
+table tr td:first-child {
+    border-left: 0;
+}
+
+table tr td:last-child {
+    border-right: 0;
+}
+
+.endGame {
+    /* display: none; */
+    width: 10vmin;
+    top: 10vmin;
+    background-color: aqua;
+    color: red;
+    text-align: center;
+    font-size: 3vmin;
+    position: absolute; 
+}
