@@ -36,7 +36,7 @@ table tr td:last-child {
 }
 
 .endGame {
-    /* display: none; */
+    display: none;
     width: 10vmin;
     top: 10vmin;
     background-color: aqua;
