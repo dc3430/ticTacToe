@@ -11,26 +11,28 @@
 </head>
 <body>
     <h1>TIC TAC TOE</h1>
-    <h2 id="msg"></h2>
-
-    <section class="cell">
-        <div id="col0"></div>
-        <div id="col1"></div>
-        <div id="col2"></div>
-    </section>
-
-    <section class="board">
-        <div id="c0r2"></div>
-        <div id="c1r2"></div>
-        <div id="c2r2"></div>
-
-        <div id="c0r1"></div>
-        <div id="c1r1"></div>
-        <div id="c2r1"></div>
-
-        <div id="c0r0"></div>
-        <div id="c1r0"></div>
-        <div id="c2r0"></div>
-    </section>    
+    <table>
+        <tr>
+            <td class="cell" id="0"></td>
+            <td class="cell" id="1"></td>
+            <td class="cell" id="2"></td>
+        </tr>
+        
+        <tr>
+            <td class="cell" id="3"></td>
+            <td class="cell" id="4"></td>
+            <td class="cell" id="5"></td>
+        </tr>
+        
+        <tr>
+            <td class="cell" id="6"></td>
+            <td class="cell" id="7"></td>
+            <td class="cell" id="8"></td>
+        </tr>
+    </table>    
+    <div class="endGame">
+        <div class="text"></div>
+    </div>
+    <Button onClick="startGame()">ReplayGame</Button>
 </body>
 </html>
