@@ -34,14 +34,3 @@ table tr td:first-child {
 table tr td:last-child {
     border-right: 0;
 }
-
-.endGame {
-    display: none;
-    width: 10vmin;
-    top: 10vmin;
-    background-color: aqua;
-    color: red;
-    text-align: center;
-    font-size: 3vmin;
-    position: absolute; 
-}

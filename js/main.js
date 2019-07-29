@@ -1,3 +1,4 @@
+/*---- Constants ----*/
 var origBoard;
 const fstPlayer = 'O';
 const sdPlayer = 'X';
@@ -12,9 +13,12 @@ const winCombo = [ //tells you the location you can get a win in
     [6, 4, 2],
 ]
 
+/*---- Event listeners ----*/
+
 const cell = document.querySelectorAll('.cell'); //selecting the cell
 startGame();
 
+/*---- Functions ----*/
 function startGame() {
     document.querySelector(".endGame").style.display = "none"
     origBoard = Array.from(Array(9).keys());
@@ -34,7 +38,7 @@ function turnClick(square) {
 }
 
 function turn(squareId, player) {
-    origBoard[squareId] = player;
+    origBoard[squareId] = player; // to look back at origin board
     document.getElementById(squareId).innerText = player;
     let gameWon = checkWin(origBoard, player)
     if (gameWOn) gameOver(gameWon)
@@ -78,17 +82,6 @@ function bestSpot() {
     return emptySqaure()[0];
 }
 
-function checkTie() {
-    if (emptySquare().length == 0) {
-        for (var i = 0; i < cell.length; i++){
-            cell[i].style.backgroundColor = "green";
-            cell[i].removeEventListener('click', turnClick, false);
-        }
-    declareWinner("Tie Gmae")
-    return true;
-    }
-return false;
-}
 
 
 
