@@ -30,15 +30,15 @@ function startGame() {
     }
 }
 
-function turnClick(square) {
+function turnClick(square) { //I need to look at this some more, the other player not getting a turn
 	if (typeof origBoard[square.target.id] == 'number') {
 		turn(square.target.id, fstPlayer)
 		if (!checkTie()) turn(bestSpot(), sdPlayer);
 	}
 }
 
-function turn(squareId, player) {
-    origBoard[squareId] = player; // to look back at origin board
+function turn(squareId, player) { 
+    origBoard[squareId] = player; // to look back at origin board for player
     document.getElementById(squareId).innerText = player;
     let gameWon = checkWin(origBoard, player)
     if (gameWOn) gameOver(gameWon)
@@ -83,6 +83,6 @@ function bestSpot() {
 }
 
 
-
+//for got to add a render, that might be be why I can't which users? 
 
 
